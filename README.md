@@ -10,7 +10,10 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   $ python -m venv .venv
 
   # aktywowanie hermetycznego środowiska
-  $ source .venv/Scripts/activate
+  $ source .venv/Scripts/activate 
+  #OR
+  $ source .venv/bin/activate
+
   $ pip install -r requirements.txt
   $ pip install -r test_requirements.txt
 
