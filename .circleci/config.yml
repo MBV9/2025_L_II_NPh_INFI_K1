@@ -11,7 +11,7 @@ jobs:
       - run: make deps
       - run: make lint 
       - run: make test
-      - run: docker_push      
+      - run: make docker_push      
 workflows: 
   basic:  
     jobs: 
