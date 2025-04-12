@@ -9,9 +9,9 @@ run:
 test:
 	PYTHONPATH=. py.test --verbose -s
 docker_build:
-	podman build -t hello-world-printer .
+	docker build -t hello-world-printer .
 docker_run: docker_build
-	@podman run \
+	@docker run \
 		--name hello-world-printer-dev \
 		-p 5001:5000 \
 		-d hello-world-printer
